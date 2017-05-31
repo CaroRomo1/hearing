@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <string name="ga_trackingId">UA-74239936-2</string>
+    <bool name="ga_autoActivityTracking">false</bool>
+
+    <screenName name="com.example.amigo.accelbluetooth.MainActivity">Main screen</screenName>
+    <screenName name="com.example.amigo.accelbluetooth.DeviceListActivity">List of BT Devices</screenName>
+
+</Resources>

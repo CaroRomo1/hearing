@@ -1,0 +1,88 @@
+{
+  "project": {
+    "projectSettingsVersion": "3.0.0",
+    "currentBuildConfiguration": null,
+    "projectFiles": {},
+    "projectDirectories": {}
+  },
+  "editorTab": {
+    "currentEditorMode": 0
+  },
+  "iot-tab": {
+    "fileStatus": {
+      ".gitignore": {
+        "previousModTime": 1490463921030,
+        "modified": 1490463921030,
+        "seen": true,
+        "name": ".gitignore"
+      },
+      "BLE-Peripheral.xdk": {
+        "previousModTime": 1490463922257,
+        "modified": 1490463922257,
+        "seen": true,
+        "name": "BLE-Peripheral.xdk"
+      },
+      "BLE-Peripheral.xdke": {
+        "previousModTime": 1494124500237,
+        "modified": 1494124500237,
+        "seen": true,
+        "name": "BLE-Peripheral.xdke"
+      },
+      "LICENSE.md": {
+        "previousModTime": 1490463921030,
+        "modified": 1490463921030,
+        "seen": true,
+        "name": "LICENSE.md"
+      },
+      "README.md": {
+        "previousModTime": 1490463921030,
+        "modified": 1490463921030,
+        "seen": true,
+        "name": "README.md"
+      },
+      "characteristic.js": {
+        "previousModTime": 1490463921029,
+        "modified": 1490463921029,
+        "seen": true,
+        "name": "characteristic.js"
+      },
+      "icon.png": {
+        "previousModTime": 1490463921030,
+        "modified": 1490463921030,
+        "seen": true,
+        "name": "icon.png"
+      },
+      "main.js": {
+        "previousModTime": 1490463921030,
+        "modified": 1490463921030,
+        "seen": true,
+        "name": "main.js"
+      },
+      "package.json": {
+        "previousModTime": 1490463921030,
+        "modified": 1490463921030,
+        "seen": true,
+        "name": "package.json"
+      },
+      "xdk/project-info.json": {
+        "previousModTime": 1490463921771,
+        "modified": 1490463921771,
+        "seen": true,
+        "name": "xdk/project-info.json"
+      },
+      "desktop.ini": {
+        "previousModTime": 1493020829781,
+        "modified": 1493020829781,
+        "seen": true,
+        "name": "desktop.ini"
+      },
+      "xdk/desktop.ini": {
+        "previousModTime": 1493020834455,
+        "modified": 1493020834455,
+        "seen": true,
+        "name": "xdk/desktop.ini"
+      }
+    },
+    "boardFileStatus": {}
+  }
+}

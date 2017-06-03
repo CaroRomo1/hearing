@@ -1,0 +1,4 @@
+#Fri Jun 02 18:51:36 CDT 2017
+base.0=/Users/caroromo/Documents/Hearing/android-bluetooth-spp/src/android/BluetoothChat/build/intermediates/transforms/dex/debug/folders/1000/5/slice_6
+renamed.0=classes.dex
+file.0=/Users/caroromo/Documents/Hearing/android-bluetooth-spp/src/android/BluetoothChat/build/intermediates/transforms/dex/debug/folders/1000/5/slice_6/classes.dex

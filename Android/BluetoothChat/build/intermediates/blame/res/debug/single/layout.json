@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/Users/caroromo/Documents/Hearing/android-bluetooth-spp/src/android/BluetoothChat/build/intermediates/res/merged/debug/layout/device_list.xml",
+        "source": "/Users/caroromo/Documents/Hearing/android-bluetooth-spp/src/android/BluetoothChat/res/layout/device_list.xml"
+    },
+    {
+        "merged": "/Users/caroromo/Documents/Hearing/android-bluetooth-spp/src/android/BluetoothChat/build/intermediates/res/merged/debug/layout/message.xml",
+        "source": "/Users/caroromo/Documents/Hearing/android-bluetooth-spp/src/android/BluetoothChat/res/layout/message.xml"
+    },
+    {
+        "merged": "/Users/caroromo/Documents/Hearing/android-bluetooth-spp/src/android/BluetoothChat/build/intermediates/res/merged/debug/layout/device_name.xml",
+        "source": "/Users/caroromo/Documents/Hearing/android-bluetooth-spp/src/android/BluetoothChat/res/layout/device_name.xml"
+    },
+    {
+        "merged": "/Users/caroromo/Documents/Hearing/android-bluetooth-spp/src/android/BluetoothChat/build/intermediates/res/merged/debug/layout/main.xml",
+        "source": "/Users/caroromo/Documents/Hearing/android-bluetooth-spp/src/android/BluetoothChat/res/layout/main.xml"
+    },
+    {
+        "merged": "/Users/caroromo/Documents/Hearing/android-bluetooth-spp/src/android/BluetoothChat/build/intermediates/res/merged/debug/layout/custom_title.xml",
+        "source": "/Users/caroromo/Documents/Hearing/android-bluetooth-spp/src/android/BluetoothChat/res/layout/custom_title.xml"
+    }
+]

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/caroromo/Documents/Hearing/android-bluetooth-spp/src/android/BluetoothChat/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
+        <dex dex="/Users/caroromo/Documents/Hearing/android-bluetooth-spp/src/android/BluetoothChat/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_393aa17e6cf3d452ff465a50926758bbe30a20db/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/caroromo/Documents/Hearing/android-bluetooth-spp/src/android/BluetoothChat/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7c51c1c41bed0f4a7519dad7b17eb1ce596ae441">
+        <dex dex="/Users/caroromo/Documents/Hearing/android-bluetooth-spp/src/android/BluetoothChat/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_924126d8b27ca3c9f8de7733da509b240721b15b/classes.dex" />
+    </item>
+
+</items>

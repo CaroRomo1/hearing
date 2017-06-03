@@ -1,0 +1,33 @@
+#Internal package file, do not edit.
+#Fri Jun 02 18:51:29 CDT 2017
+2.base=/Users/caroromo/Documents/Hearing/android-bluetooth-spp/src/android/BluetoothChat/build/intermediates/res/resources-debug.ap_
+5.file=/Users/caroromo/Documents/Hearing/android-bluetooth-spp/src/android/BluetoothChat/build/intermediates/res/resources-debug.ap_/AndroidManifest.xml
+5.set=ANDROID_RESOURCE
+3.base=/Users/caroromo/Documents/Hearing/android-bluetooth-spp/src/android/BluetoothChat/build/intermediates/res/resources-debug.ap_
+6.file=/Users/caroromo/Documents/Hearing/android-bluetooth-spp/src/android/BluetoothChat/build/intermediates/res/resources-debug.ap_/res/layout/device_name.xml
+2.set=ANDROID_RESOURCE
+4.base=/Users/caroromo/Documents/Hearing/android-bluetooth-spp/src/android/BluetoothChat/build/intermediates/res/resources-debug.ap_
+7.file=/Users/caroromo/Documents/Hearing/android-bluetooth-spp/src/android/BluetoothChat/build/intermediates/res/resources-debug.ap_/res/menu/option_menu.xml
+7.set=ANDROID_RESOURCE
+count=10
+0.file=/Users/caroromo/Documents/Hearing/android-bluetooth-spp/src/android/BluetoothChat/build/intermediates/res/resources-debug.ap_/res/layout/message.xml
+5.base=/Users/caroromo/Documents/Hearing/android-bluetooth-spp/src/android/BluetoothChat/build/intermediates/res/resources-debug.ap_
+8.file=/Users/caroromo/Documents/Hearing/android-bluetooth-spp/src/android/BluetoothChat/build/intermediates/res/resources-debug.ap_/res/drawable-hdpi-v4/app_icon.png
+4.set=ANDROID_RESOURCE
+6.base=/Users/caroromo/Documents/Hearing/android-bluetooth-spp/src/android/BluetoothChat/build/intermediates/res/resources-debug.ap_
+1.file=/Users/caroromo/Documents/Hearing/android-bluetooth-spp/src/android/BluetoothChat/build/intermediates/res/resources-debug.ap_/res/drawable/app_icon.png
+9.set=ANDROID_RESOURCE
+9.file=/Users/caroromo/Documents/Hearing/android-bluetooth-spp/src/android/BluetoothChat/build/intermediates/res/resources-debug.ap_/res/layout/device_list.xml
+1.set=ANDROID_RESOURCE
+7.base=/Users/caroromo/Documents/Hearing/android-bluetooth-spp/src/android/BluetoothChat/build/intermediates/res/resources-debug.ap_
+2.file=/Users/caroromo/Documents/Hearing/android-bluetooth-spp/src/android/BluetoothChat/build/intermediates/res/resources-debug.ap_/res/layout/main.xml
+6.set=ANDROID_RESOURCE
+0.base=/Users/caroromo/Documents/Hearing/android-bluetooth-spp/src/android/BluetoothChat/build/intermediates/res/resources-debug.ap_
+8.base=/Users/caroromo/Documents/Hearing/android-bluetooth-spp/src/android/BluetoothChat/build/intermediates/res/resources-debug.ap_
+3.file=/Users/caroromo/Documents/Hearing/android-bluetooth-spp/src/android/BluetoothChat/build/intermediates/res/resources-debug.ap_/res/layout/custom_title.xml
+3.set=ANDROID_RESOURCE
+1.base=/Users/caroromo/Documents/Hearing/android-bluetooth-spp/src/android/BluetoothChat/build/intermediates/res/resources-debug.ap_
+9.base=/Users/caroromo/Documents/Hearing/android-bluetooth-spp/src/android/BluetoothChat/build/intermediates/res/resources-debug.ap_
+4.file=/Users/caroromo/Documents/Hearing/android-bluetooth-spp/src/android/BluetoothChat/build/intermediates/res/resources-debug.ap_/resources.arsc
+8.set=ANDROID_RESOURCE
+0.set=ANDROID_RESOURCE

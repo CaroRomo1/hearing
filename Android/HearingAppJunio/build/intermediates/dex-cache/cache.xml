@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/caroromo/Documents/Hearing/hearing/Android/HearingAppJunio/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="bb144aa2e8efeaaecf27b90ad01a2e000b25b47f">
+        <dex dex="/Users/caroromo/Documents/Hearing/hearing/Android/HearingAppJunio/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_120f33d51e8532d384f34c4ff40942d97858e3a5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/caroromo/Documents/Hearing/hearing/Android/HearingAppJunio/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
+        <dex dex="/Users/caroromo/Documents/Hearing/hearing/Android/HearingAppJunio/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_5a910419ea11a5253ffac948936c0b0ca398b12f/classes.dex" />
+    </item>
+
+</items>

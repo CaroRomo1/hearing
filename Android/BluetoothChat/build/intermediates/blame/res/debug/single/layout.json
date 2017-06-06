@@ -1,22 +1,22 @@
 [
     {
-        "merged": "/Users/caroromo/Documents/Hearing/android-bluetooth-spp/src/android/BluetoothChat/build/intermediates/res/merged/debug/layout/device_list.xml",
-        "source": "/Users/caroromo/Documents/Hearing/android-bluetooth-spp/src/android/BluetoothChat/res/layout/device_list.xml"
+        "merged": "/media/caceres95/C43A73F53A73E33A/Users/Carlos/Google Drive/Hea-ring/Prototipo/Git-repo/Android/BluetoothChat/build/intermediates/res/merged/debug/layout/main.xml",
+        "source": "/media/caceres95/C43A73F53A73E33A/Users/Carlos/Google Drive/Hea-ring/Prototipo/Git-repo/Android/BluetoothChat/res/layout/main.xml"
     },
     {
-        "merged": "/Users/caroromo/Documents/Hearing/android-bluetooth-spp/src/android/BluetoothChat/build/intermediates/res/merged/debug/layout/message.xml",
-        "source": "/Users/caroromo/Documents/Hearing/android-bluetooth-spp/src/android/BluetoothChat/res/layout/message.xml"
+        "merged": "/media/caceres95/C43A73F53A73E33A/Users/Carlos/Google Drive/Hea-ring/Prototipo/Git-repo/Android/BluetoothChat/build/intermediates/res/merged/debug/layout/device_name.xml",
+        "source": "/media/caceres95/C43A73F53A73E33A/Users/Carlos/Google Drive/Hea-ring/Prototipo/Git-repo/Android/BluetoothChat/res/layout/device_name.xml"
     },
     {
-        "merged": "/Users/caroromo/Documents/Hearing/android-bluetooth-spp/src/android/BluetoothChat/build/intermediates/res/merged/debug/layout/device_name.xml",
-        "source": "/Users/caroromo/Documents/Hearing/android-bluetooth-spp/src/android/BluetoothChat/res/layout/device_name.xml"
+        "merged": "/media/caceres95/C43A73F53A73E33A/Users/Carlos/Google Drive/Hea-ring/Prototipo/Git-repo/Android/BluetoothChat/build/intermediates/res/merged/debug/layout/message.xml",
+        "source": "/media/caceres95/C43A73F53A73E33A/Users/Carlos/Google Drive/Hea-ring/Prototipo/Git-repo/Android/BluetoothChat/res/layout/message.xml"
     },
     {
-        "merged": "/Users/caroromo/Documents/Hearing/android-bluetooth-spp/src/android/BluetoothChat/build/intermediates/res/merged/debug/layout/main.xml",
-        "source": "/Users/caroromo/Documents/Hearing/android-bluetooth-spp/src/android/BluetoothChat/res/layout/main.xml"
+        "merged": "/media/caceres95/C43A73F53A73E33A/Users/Carlos/Google Drive/Hea-ring/Prototipo/Git-repo/Android/BluetoothChat/build/intermediates/res/merged/debug/layout/custom_title.xml",
+        "source": "/media/caceres95/C43A73F53A73E33A/Users/Carlos/Google Drive/Hea-ring/Prototipo/Git-repo/Android/BluetoothChat/res/layout/custom_title.xml"
     },
     {
-        "merged": "/Users/caroromo/Documents/Hearing/android-bluetooth-spp/src/android/BluetoothChat/build/intermediates/res/merged/debug/layout/custom_title.xml",
-        "source": "/Users/caroromo/Documents/Hearing/android-bluetooth-spp/src/android/BluetoothChat/res/layout/custom_title.xml"
+        "merged": "/media/caceres95/C43A73F53A73E33A/Users/Carlos/Google Drive/Hea-ring/Prototipo/Git-repo/Android/BluetoothChat/build/intermediates/res/merged/debug/layout/device_list.xml",
+        "source": "/media/caceres95/C43A73F53A73E33A/Users/Carlos/Google Drive/Hea-ring/Prototipo/Git-repo/Android/BluetoothChat/res/layout/device_list.xml"
     }
 ]

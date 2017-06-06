@@ -3,21 +3,21 @@
 
     <item
         is-multidex="true"
-        jar="/Users/caroromo/Documents/Hearing/android-bluetooth-spp/src/android/BluetoothChat/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jar="/media/caceres95/C43A73F53A73E33A/Users/Carlos/Google Drive/Hea-ring/Prototipo/Git-repo/Android/BluetoothChat/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
-        <dex dex="/Users/caroromo/Documents/Hearing/android-bluetooth-spp/src/android/BluetoothChat/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_393aa17e6cf3d452ff465a50926758bbe30a20db/classes.dex" />
+        sha1="37094746f91edabac418e0f30dfd1f1eedfb2554">
+        <dex dex="/media/caceres95/C43A73F53A73E33A/Users/Carlos/Google Drive/Hea-ring/Prototipo/Git-repo/Android/BluetoothChat/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_79a5d34e333c3b976bb6aa067e8403467ab358a5/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/caroromo/Documents/Hearing/android-bluetooth-spp/src/android/BluetoothChat/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jar="/media/caceres95/C43A73F53A73E33A/Users/Carlos/Google Drive/Hea-ring/Prototipo/Git-repo/Android/BluetoothChat/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="7c51c1c41bed0f4a7519dad7b17eb1ce596ae441">
-        <dex dex="/Users/caroromo/Documents/Hearing/android-bluetooth-spp/src/android/BluetoothChat/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_924126d8b27ca3c9f8de7733da509b240721b15b/classes.dex" />
+        sha1="caff8e51a24901cfc9cd7e1cf83d84f4cb0c103b">
+        <dex dex="/media/caceres95/C43A73F53A73E33A/Users/Carlos/Google Drive/Hea-ring/Prototipo/Git-repo/Android/BluetoothChat/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_a8255dd62dd202a4a113c7809e9904aa47b3ff44/classes.dex" />
     </item>
 
 </items>

@@ -1,4 +1,4 @@
-#Fri Jun 02 18:51:35 CDT 2017
-base.0=/Users/caroromo/Documents/Hearing/android-bluetooth-spp/src/android/BluetoothChat/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3
+#Mon Jun 05 18:38:36 CDT 2017
+base.0=/media/caceres95/C43A73F53A73E33A/Users/Carlos/Google Drive/Hea-ring/Prototipo/Git-repo/Android/BluetoothChat/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3
 renamed.0=classes.dex
-file.0=/Users/caroromo/Documents/Hearing/android-bluetooth-spp/src/android/BluetoothChat/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex
+file.0=/media/caceres95/C43A73F53A73E33A/Users/Carlos/Google Drive/Hea-ring/Prototipo/Git-repo/Android/BluetoothChat/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex

@@ -36,12 +36,15 @@ class echoThread(threading.Thread):
         self.client_info = client_info
     def run(self):
         try:
+            yprev = 0
             while True:
-                time.sleep(1)
                 y = x.read()
-                if(y == 1) :
+                if(y == 1 and yprev == 0) :
                     self.sock.send(str(y))
                     print self.client_info, ": sent [%d]" % y
+                    yprev = 1
+                elif(y == 0 and yprev == 1):
+                    yprev = 0
         except IOError:
             pass
         self.sock.close()

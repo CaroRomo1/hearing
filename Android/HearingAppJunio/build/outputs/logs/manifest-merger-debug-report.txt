@@ -15,10 +15,23 @@ ADDED from /Users/caroromo/Documents/Hearing/hearing/Android/HearingAppJunio/And
 		ADDED from /Users/caroromo/Documents/Hearing/hearing/Android/HearingAppJunio/AndroidManifest.xml:16:11-69
 uses-sdk
 ADDED from /Users/caroromo/Documents/Hearing/hearing/Android/HearingAppJunio/AndroidManifest.xml:20:5-22:41
+MERGED from [com.android.support:design:24.1.1] /Users/caroromo/.android/build-cache/03497b15519a10784365396eb8811e84ef1666d0/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:24.1.1] /Users/caroromo/.android/build-cache/a073c88df8aa1d35e8ec9a9d6f87bdfff3f124b6/output/AndroidManifest.xml:20:5-43
+MERGED from [com.ibm.watson.developer_cloud:android-sdk:0.2.3] /Users/caroromo/.android/build-cache/0790bfaebb7fec4a4ae2aac6ebd77d5725e96beb/output/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:24.1.1] /Users/caroromo/.android/build-cache/9945b553826a7bc667a5f4cc5b9da04bfd75ea70/output/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:24.1.1] /Users/caroromo/.android/build-cache/a264390a5a0a88f84c9c0167b81072abd0234e4c/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:24.1.1] /Users/caroromo/.android/build-cache/07f3e669dea38262d05fa51ccb970340ca7643f3/output/AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:support-v4:24.1.1] /Users/caroromo/.android/build-cache/5c4b4ad9ac020cc9ef46fb753fae3fe1bd71d8c6/output/AndroidManifest.xml:21:5-23:54
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:24.1.1] /Users/caroromo/.android/build-cache/9945b553826a7bc667a5f4cc5b9da04bfd75ea70/output/AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
 		ADDED from /Users/caroromo/Documents/Hearing/hearing/Android/HearingAppJunio/AndroidManifest.xml:22:9-38
+		INJECTED from /Users/caroromo/Documents/Hearing/hearing/Android/HearingAppJunio/AndroidManifest.xml
+		INJECTED from /Users/caroromo/Documents/Hearing/hearing/Android/HearingAppJunio/AndroidManifest.xml
 	android:minSdkVersion
 		ADDED from /Users/caroromo/Documents/Hearing/hearing/Android/HearingAppJunio/AndroidManifest.xml:21:9-35
+		INJECTED from /Users/caroromo/Documents/Hearing/hearing/Android/HearingAppJunio/AndroidManifest.xml
+		INJECTED from /Users/caroromo/Documents/Hearing/hearing/Android/HearingAppJunio/AndroidManifest.xml
 uses-permission#android.permission.BLUETOOTH_ADMIN
 ADDED from /Users/caroromo/Documents/Hearing/hearing/Android/HearingAppJunio/AndroidManifest.xml:23:5-74
 	android:name
@@ -29,6 +42,12 @@ ADDED from /Users/caroromo/Documents/Hearing/hearing/Android/HearingAppJunio/And
 		ADDED from /Users/caroromo/Documents/Hearing/hearing/Android/HearingAppJunio/AndroidManifest.xml:24:22-65
 application
 ADDED from /Users/caroromo/Documents/Hearing/hearing/Android/HearingAppJunio/AndroidManifest.xml:26:5-39:19
+MERGED from [com.android.support:design:24.1.1] /Users/caroromo/.android/build-cache/03497b15519a10784365396eb8811e84ef1666d0/output/AndroidManifest.xml:22:5-20
+MERGED from [com.ibm.watson.developer_cloud:android-sdk:0.2.3] /Users/caroromo/.android/build-cache/0790bfaebb7fec4a4ae2aac6ebd77d5725e96beb/output/AndroidManifest.xml:11:5-12:19
+MERGED from [com.android.support:appcompat-v7:24.1.1] /Users/caroromo/.android/build-cache/9945b553826a7bc667a5f4cc5b9da04bfd75ea70/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:24.1.1] /Users/caroromo/.android/build-cache/a264390a5a0a88f84c9c0167b81072abd0234e4c/output/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:24.1.1] /Users/caroromo/.android/build-cache/07f3e669dea38262d05fa51ccb970340ca7643f3/output/AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:support-v4:24.1.1] /Users/caroromo/.android/build-cache/5c4b4ad9ac020cc9ef46fb753fae3fe1bd71d8c6/output/AndroidManifest.xml:25:5-20
 	android:label
 		ADDED from /Users/caroromo/Documents/Hearing/hearing/Android/HearingAppJunio/AndroidManifest.xml:26:18-50
 	android:icon

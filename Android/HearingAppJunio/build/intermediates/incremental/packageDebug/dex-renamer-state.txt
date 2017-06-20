@@ -1,4 +1,4 @@
-#Mon Jun 19 18:54:34 CDT 2017
+#Mon Jun 19 20:59:22 CDT 2017
 file.2=/Users/caroromo/Documents/Hearing/hearing/Android/HearingAppJunio/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-ws-3.4.2_5c4ff4f88b96b6c65c69acf7c411a397a585a3b5/classes.dex
 base.2=/Users/caroromo/Documents/Hearing/hearing/Android/HearingAppJunio/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-ws-3.4.2_5c4ff4f88b96b6c65c69acf7c411a397a585a3b5
 file.1=/Users/caroromo/Documents/Hearing/hearing/Android/HearingAppJunio/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d7c7ba5b815965f3028535d85af834aff73b5403/classes.dex

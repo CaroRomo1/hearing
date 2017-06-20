@@ -324,25 +324,24 @@ public class BluetoothChat extends Activity {
                 service.setUsernameAndPassword("9671d2c8-63e3-4f58-b2a6-474c257101a7", "UoQKPtSkRjO0");
                 final byte[] readBuf = (byte[]) msg.obj;
                 // construct a string from the valid bytes in the buffer
-
+                String readMessage = new String(readBuf, 0, msg.arg1);
+                Log.d(TAG, "STRING " + readMessage);
+                if (readMessage.equals("1")) {
+                    readMessage = "Si manipulo datos";
+                }
+                else {
+                    readMessage = "No manipulo datos";
+                }
+                mConversationArrayAdapter.add(mConnectedDeviceName+":  " + readMessage );
+                String audio;
                 //Watson Text-to-Speech Service on Bluemix
                 Thread thread = new Thread(new Runnable() {
                     public void run() {
                         try {
-                            String readMessage = new String(readBuf, 0, msg.arg1);
-                            Log.d(TAG, "STRING " + readMessage);
-                            if (readMessage.equals("1")) {
-                                readMessage = "Si manupulo datos";
-                            }
-                            else {
-                                readMessage = "No manupulo datos :(";
-                            }
-                            mConversationArrayAdapter.add(mConnectedDeviceName+":  " + readMessage );
                             //audioMessage =(Message) messageArrayList.get(position);
                             streamPlayer = new StreamPlayer();
                             Log.e(TAG, "SUENAAAAA");
-                            streamPlayer.playStream(service.synthesize("HOLA", Voice.LA_SOFIA).execute());
-
+                            streamPlayer.playStream(service.synthesize("hola", Voice.LA_SOFIA).execute());
                         } catch (Exception e) {
                             Log.e(TAG, "SUENAAAAA no");
                             e.printStackTrace();

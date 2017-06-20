@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Mon Jun 19 18:54:35 CDT 2017
+#Mon Jun 19 20:59:22 CDT 2017
 210.set=ANDROID_RESOURCE
 14.set=NATIVE_RESOURCE
 180.file=/Users/caroromo/Documents/Hearing/hearing/Android/HearingAppJunio/build/intermediates/transforms/mergeJniLibs/debug/folders/2000/1f/main/lib/armeabi-v7a/libogg.so

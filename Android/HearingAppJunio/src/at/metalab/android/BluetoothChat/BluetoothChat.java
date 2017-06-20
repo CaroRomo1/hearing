@@ -78,6 +78,7 @@ import com.ibm.watson.developer_cloud.speech_to_text.v1.websocket.RecognizeCallb
 import com.ibm.watson.developer_cloud.text_to_speech.v1.TextToSpeech;
 import com.ibm.watson.developer_cloud.text_to_speech.v1.model.Voice;
 
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
@@ -127,6 +128,9 @@ public class BluetoothChat extends Activity {
     // Member object for the chat services
     private BluetoothChatService mChatService = null;
 
+    // Watson services
+    StreamPlayer streamPlayer;
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -146,9 +150,6 @@ public class BluetoothChat extends Activity {
             return;
         }
 
-        //Watson Text-to-Speech Service on Bluemix
-        final TextToSpeech service = new TextToSpeech();
-        service.setUsernameAndPassword("1518ad98-827b-4ece-94ad-848bf9415b17", "DA5FvG0rvE0t");
     }
 
     @Override
@@ -294,7 +295,7 @@ public class BluetoothChat extends Activity {
     // The Handler that gets information back from the BluetoothChatService
     private final Handler mHandler = new Handler() {
         @Override
-        public void handleMessage(Message msg) {
+        public void handleMessage(final Message msg) {
             switch (msg.what) {
             case MESSAGE_STATE_CHANGE:
                 if(D) Log.i(TAG, "MESSAGE_STATE_CHANGE: " + msg.arg1);
@@ -319,18 +320,36 @@ public class BluetoothChat extends Activity {
                 mConversationArrayAdapter.add("Me:  " + writeMessage);
                 break;
             case MESSAGE_READ:
-                byte[] readBuf = (byte[]) msg.obj;
+                final TextToSpeech service = new TextToSpeech();
+                service.setUsernameAndPassword("9671d2c8-63e3-4f58-b2a6-474c257101a7", "UoQKPtSkRjO0");
+                final byte[] readBuf = (byte[]) msg.obj;
                 // construct a string from the valid bytes in the buffer
-                String readMessage = new String(readBuf, 0, msg.arg1);
-                Log.d(TAG, "STRING " + readMessage);
-                if (readMessage.equals("1"))
-                {
-                    readMessage = "Si manupulo datos";
-                }
-                else {
-                    readMessage = "No manupulo datos :(";
-                }
-                mConversationArrayAdapter.add(mConnectedDeviceName+":  " + "-" + readMessage + "-" );
+
+                //Watson Text-to-Speech Service on Bluemix
+                Thread thread = new Thread(new Runnable() {
+                    public void run() {
+                        try {
+                            String readMessage = new String(readBuf, 0, msg.arg1);
+                            Log.d(TAG, "STRING " + readMessage);
+                            if (readMessage.equals("1")) {
+                                readMessage = "Si manupulo datos";
+                            }
+                            else {
+                                readMessage = "No manupulo datos :(";
+                            }
+                            mConversationArrayAdapter.add(mConnectedDeviceName+":  " + readMessage );
+                            //audioMessage =(Message) messageArrayList.get(position);
+                            streamPlayer = new StreamPlayer();
+                            Log.e(TAG, "SUENAAAAA");
+                            streamPlayer.playStream(service.synthesize("HOLA", Voice.LA_SOFIA).execute());
+
+                        } catch (Exception e) {
+                            Log.e(TAG, "SUENAAAAA no");
+                            e.printStackTrace();
+                        }
+                    }
+                });
+                thread.start();
                 break;
             case MESSAGE_DEVICE_NAME:
                 // save the connected device's name

@@ -41,6 +41,49 @@ import android.widget.TextView;
 import android.widget.Toast;
 import at.metalab.android.BluetoothChat.R;
 
+
+import android.Manifest;
+import android.content.Context;
+import android.content.pm.PackageManager;
+import android.graphics.Typeface;
+import android.media.Image;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
+import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.DefaultItemAnimator;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
+import android.util.Log;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.ImageButton;
+import android.widget.Toast;
+
+import com.ibm.watson.developer_cloud.android.library.audio.MicrophoneInputStream;
+import com.ibm.watson.developer_cloud.android.library.audio.StreamPlayer;
+import com.ibm.watson.developer_cloud.android.library.audio.utils.ContentType;
+import com.ibm.watson.developer_cloud.conversation.v1.ConversationService;
+import com.ibm.watson.developer_cloud.conversation.v1.model.MessageRequest;
+import com.ibm.watson.developer_cloud.conversation.v1.model.MessageResponse;
+import com.ibm.watson.developer_cloud.http.HttpMediaType;
+import com.ibm.watson.developer_cloud.speech_to_text.v1.SpeechToText;
+import com.ibm.watson.developer_cloud.speech_to_text.v1.model.RecognizeOptions;
+import com.ibm.watson.developer_cloud.speech_to_text.v1.model.SpeechResults;
+import com.ibm.watson.developer_cloud.speech_to_text.v1.websocket.BaseRecognizeCallback;
+import com.ibm.watson.developer_cloud.speech_to_text.v1.websocket.RecognizeCallback;
+import com.ibm.watson.developer_cloud.text_to_speech.v1.TextToSpeech;
+import com.ibm.watson.developer_cloud.text_to_speech.v1.model.Voice;
+
+import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
+
 /**
  * This is the main Activity that displays the current chat session.
  *
@@ -85,6 +128,9 @@ public class BluetoothChat extends Activity {
     // Member object for the chat services
     private BluetoothChatService mChatService = null;
 
+    // Watson services
+    StreamPlayer streamPlayer;
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -103,6 +149,7 @@ public class BluetoothChat extends Activity {
             finish();
             return;
         }
+
     }
 
     @Override
@@ -248,7 +295,7 @@ public class BluetoothChat extends Activity {
     // The Handler that gets information back from the BluetoothChatService
     private final Handler mHandler = new Handler() {
         @Override
-        public void handleMessage(Message msg) {
+        public void handleMessage(final Message msg) {
             switch (msg.what) {
             case MESSAGE_STATE_CHANGE:
                 if(D) Log.i(TAG, "MESSAGE_STATE_CHANGE: " + msg.arg1);
@@ -273,18 +320,36 @@ public class BluetoothChat extends Activity {
                 mConversationArrayAdapter.add("Me:  " + writeMessage);
                 break;
             case MESSAGE_READ:
-                byte[] readBuf = (byte[]) msg.obj;
+                final TextToSpeech service = new TextToSpeech();
+                service.setUsernameAndPassword("9671d2c8-63e3-4f58-b2a6-474c257101a7", "UoQKPtSkRjO0");
+                final byte[] readBuf = (byte[]) msg.obj;
                 // construct a string from the valid bytes in the buffer
-                String readMessage = new String(readBuf, 0, msg.arg1);
-                Log.d(TAG, "STRING " + readMessage);
-                if (readMessage.equals("1"))
-                {
-                    readMessage = "Si manupulo datos";
-                }
-                else {
-                    readMessage = "No manupulo datos :(";
-                }
-                mConversationArrayAdapter.add(mConnectedDeviceName+":  " + "-" + readMessage + "-" );
+
+                //Watson Text-to-Speech Service on Bluemix
+                Thread thread = new Thread(new Runnable() {
+                    public void run() {
+                        try {
+                            String readMessage = new String(readBuf, 0, msg.arg1);
+                            Log.d(TAG, "STRING " + readMessage);
+                            if (readMessage.equals("1")) {
+                                readMessage = "Si manupulo datos";
+                            }
+                            else {
+                                readMessage = "No manupulo datos :(";
+                            }
+                            mConversationArrayAdapter.add(mConnectedDeviceName+":  " + readMessage );
+                            //audioMessage =(Message) messageArrayList.get(position);
+                            streamPlayer = new StreamPlayer();
+                            Log.e(TAG, "SUENAAAAA");
+                            streamPlayer.playStream(service.synthesize("HOLA", Voice.LA_SOFIA).execute());
+
+                        } catch (Exception e) {
+                            Log.e(TAG, "SUENAAAAA no");
+                            e.printStackTrace();
+                        }
+                    }
+                });
+                thread.start();
                 break;
             case MESSAGE_DEVICE_NAME:
                 // save the connected device's name
@@ -355,11 +420,11 @@ public class BluetoothChat extends Activity {
             serverIntent = new Intent(this, DeviceListActivity.class);
             startActivityForResult(serverIntent, REQUEST_CONNECT_DEVICE_SECURE);
             return true;
-        case R.id.insecure_connect_scan:
+        /*case R.id.insecure_connect_scan:
             // Launch the DeviceListActivity to see devices and do scan
             serverIntent = new Intent(this, DeviceListActivity.class);
             startActivityForResult(serverIntent, REQUEST_CONNECT_DEVICE_INSECURE);
-            return true;
+            return true;*/
         case R.id.discoverable:
             // Ensure this device is discoverable by others
             ensureDiscoverable();

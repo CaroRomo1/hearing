@@ -461,6 +461,7 @@
     <integer name="bottom_sheet_slide_duration">150</integer>
     <integer name="cancel_button_image_alpha">127</integer>
     <integer name="design_snackbar_text_max_lines">2</integer>
+    <integer name="google_play_services_version">10084000</integer>
     <integer name="status_bar_notification_info_maxnum">999</integer>
     <string name="abc_action_bar_home_description">Navigate home</string>
     <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
@@ -499,7 +500,15 @@
     <string name="bt_not_enabled_leaving">Bluetooth was not enabled. Leaving Bluetooth Chat.</string>
     <string name="button_scan">Scan for devices</string>
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
+    <string name="common_google_play_services_unknown_issue"><ns1:g id="app_name">%1$s</ns1:g> is having trouble with Google Play services. Please try again.</string>
+    <string name="default_web_client_id" translatable="false">307689727105-oa46csaprf5u276fbdol6u3i3ps5k5ck.apps.googleusercontent.com</string>
     <string name="discoverable">Make discoverable</string>
+    <string name="firebase_database_url" translatable="false">https://hearingappjunio.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">307689727105</string>
+    <string name="google_api_key" translatable="false">AIzaSyA0-ukWoGOCpozkO8ea3ONFr6mLELV8ld4</string>
+    <string name="google_app_id" translatable="false">1:307689727105:android:f21a89d6bee55cb4</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyA0-ukWoGOCpozkO8ea3ONFr6mLELV8ld4</string>
+    <string name="google_storage_bucket" translatable="false">hearingappjunio.appspot.com</string>
     <string name="insecure_connect">Connect a device - Insecure</string>
     <string name="none_found">No devices found</string>
     <string name="none_paired">No devices have been paired</string>

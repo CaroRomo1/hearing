@@ -131,6 +131,9 @@ public class BluetoothChat extends Activity {
     // Watson services
     StreamPlayer streamPlayer;
 
+    private String FIREBASE_URL = "https://hearingappjunio.firebaseio.com/";
+    private String FIREBASE_CHILD = "test";
+    Firebase firebase;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -328,27 +331,35 @@ public class BluetoothChat extends Activity {
                 Log.d(TAG, "STRING " + readMessage);
                 if (readMessage.equals("1")) {
                     readMessage = "Si manipulo datos";
+                    //Watson Text-to-Speech Service on Bluemix
+                    Thread thread = new Thread(new Runnable() {
+                        public void run() {
+                            try {
+                                //audioMessage =(Message) messageArrayList.get(position);
+                                final String audio = "Si manipulo datos";
+                                streamPlayer = new StreamPlayer();
+                                Log.e(TAG, "SUENAAAAA");
+                                streamPlayer.playStream(service.synthesize(audio, Voice.LA_SOFIA).execute());
+                            } catch (Exception e) {
+                                Log.e(TAG, "SUENAAAAA no");
+                                e.printStackTrace();
+                            }
+                        }
+                    });
+                    thread.start();
+                    // Write a message to the database
+                    FirebaseDatabase database = FirebaseDatabase.getInstance();
+                    DatabaseReference myRef = database.getReference("message");
+
+                    myRef.setValue("Hello, World!");
                 }
                 else {
                     readMessage = "No manipulo datos";
                 }
                 mConversationArrayAdapter.add(mConnectedDeviceName+":  " + readMessage );
                 String audio;
-                //Watson Text-to-Speech Service on Bluemix
-                Thread thread = new Thread(new Runnable() {
-                    public void run() {
-                        try {
-                            //audioMessage =(Message) messageArrayList.get(position);
-                            streamPlayer = new StreamPlayer();
-                            Log.e(TAG, "SUENAAAAA");
-                            streamPlayer.playStream(service.synthesize("hola", Voice.LA_SOFIA).execute());
-                        } catch (Exception e) {
-                            Log.e(TAG, "SUENAAAAA no");
-                            e.printStackTrace();
-                        }
-                    }
-                });
-                thread.start();
+
+
                 break;
             case MESSAGE_DEVICE_NAME:
                 // save the connected device's name

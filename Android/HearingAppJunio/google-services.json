@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "307689727105",
+    "firebase_url": "https://hearingappjunio.firebaseio.com",
+    "project_id": "hearingappjunio",
+    "storage_bucket": "hearingappjunio.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:307689727105:android:f21a89d6bee55cb4",
+        "android_client_info": {
+          "package_name": "at.metalab.android.BluetoothChat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "307689727105-q1soj7jm605n6k1pg5ss4dsqnfo4qeqd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "at.metalab.android.BluetoothChat",
+            "certificate_hash": "29afd7b7bf3b494c0fba06af8c90425e61aa816c"
+          }
+        },
+        {
+          "client_id": "307689727105-oa46csaprf5u276fbdol6u3i3ps5k5ck.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0-ukWoGOCpozkO8ea3ONFr6mLELV8ld4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "307689727105-oa46csaprf5u276fbdol6u3i3ps5k5ck.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
